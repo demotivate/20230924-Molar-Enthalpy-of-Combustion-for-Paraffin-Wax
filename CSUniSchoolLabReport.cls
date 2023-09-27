@@ -46,6 +46,8 @@
 \usepackage[version=4]{mhchem} % Package for chemical equation typesetting
 \usepackage{siunitx} % Provides the \SI{}{} and \si{} commands for typesetting technical/scientific SI units correctly
 
+\usepackage{gensymb}
+
 \usepackage{amsmath} % Required for some math elements 
 
 %----------------------------------------------------------------------------------------
@@ -72,6 +74,15 @@
 
 \usepackage{csquotes,xpatch}% recommended
 \usepackage[english]{babel}
+
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
+\usepackage{color}
+\usepackage{tabularray}
+
+\usepackage[justification=centering]{caption}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
