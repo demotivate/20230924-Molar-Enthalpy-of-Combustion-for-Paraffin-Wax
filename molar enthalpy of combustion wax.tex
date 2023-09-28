@@ -201,8 +201,8 @@ With \(\Delta H\degree_{f}\) being the molar enthalpy of formation for some comp
 the following values will be used.
 \\
 \begin{tabular}{ll}
-  \ce{C25H52(s)}: & \(\Delta H\degree_{f} = -10514~kJmol^{-1}\) (\cite{drTangC25H52}) \\
-  \ce{CO2(g)}:    & \(\Delta H\degree_{f} = -393.5~kJmol^{-1}\)                       \\
+  \ce{C25H52(s)}: & \(\Delta H\degree_{f} = -1424.3~kJmol^{-1}\) \\
+  \ce{CO2(g)}:    & \(\Delta H\degree_{f} = -393.5~kJmol^{-1}\)  \\
   \ce{H2O(g)}:    & \(\Delta H\degree_{f} = -241.8~kJmol^{-1}\)
 \end{tabular}
 
@@ -216,9 +216,10 @@ These values can then be used to calculated to theoretical molar enthalpy of com
 
 \begin{multline*}
   \Delta H\degree_{comb} = \Sigma nH\degree_{f}products - \Sigma nH\degree_{f}reactants \\
-  \Delta H\degree_{comb} = \left((25mol)(-393.5kJmol^{-1}) + (26mol)(-241.8kJmol^{-1})\right)\\ - (1mol)(-10514kJmol^{-1})
+  \Delta H\degree_{comb} = \left((25mol)(-393.5kJmol^{-1}) + (26mol)(-241.8kJmol^{-1})\right)\\ - (1mol)(-1424.3kJmol^{-1})
 \end{multline*}
-\[\Delta H\degree_{comb} = -8028kJ\]
+\[\Delta H\degree_{comb} = -14700kJ\]
+\[\Delta H\degree_{comb} = -14.7MJ\]
 
 \subsection{Calculation of experimental molar enthalpy\\ of combustion}
 The system of the calorimetry experiment will be the combustion of the Paraffin Wax,
@@ -226,19 +227,67 @@ and the surroundings will be the water and the can. We will make the assumption 
 the can is made out of aluminium (\cite{Drink_can_2023}).
 
 The systems and surroundings are presented in Table \ref*{tab:system} along with
-what they entail.
+what they entail. Note that \(q\) equals to the total heat in J.
 
-\begin{table}
+\begin{table}[H]
   \centering
   \resizebox{\linewidth}{!}{%
     \begin{tabular}{>{\hspace{0pt}}m{0.369\linewidth}|>{\hspace{0pt}}m{0.569\linewidth}}
       System                                                                       & Surroundings                                                                                                                     \\
       \hline
-      Combustion of Paraffin Wax\par{}\(\Delta E_p\)\par{}\(q_1=nH\degree_{comb}\) & Water + Aluminium Can\par{}\(\Delta E_k\)\par{}\(q_2=m_{water}c_{water}\Delta T_{water}\)\par{}\(q_2=m_{Al}c_{Al}\Delta T_{Al}\)
+      Combustion of Paraffin Wax\par{}\(\Delta E_p\)\par{}\(q_1=nH\degree_{comb}\) & Water + Aluminium Can\par{}\(\Delta E_k\)\par{}\(q_2=m_{water}c_{water}\Delta T_{water}\)\par{}\(q_3=m_{Al}c_{Al}\Delta T_{Al}\)
     \end{tabular}
   }
   \caption{System and surroundings of the calorimeter.}
   \label{tab:system}
+\end{table}
+
+Given that \(q_1=q_2+q_3\), the value of \(nH\degree_{comb}\) can then be calculated. A sample calculation is shown below for Trial 1.
+\begin{align*}
+  q_1              & = q_2 + q_3                                                                \\
+  nH\degree_{comb} & = m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}           \\
+  H\degree_{comb}  & = \frac{m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}}{n} \\
+\end{align*}
+\begin{multline*}
+  m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} \\ = (50.141g \pm 0.003g)(4.19Jg^{-1}\degree C^{-1})(60.7\degree C \pm 0.3\degree C - 23.8\degree C \pm 0.3\degree C) \\+ (13.039g \pm 0.003g)(0.897Jg^{-1}\degree C^{-1})(60.7\degree C \pm 0.3\degree C - 23.8\degree C \pm 0.3\degree C)
+\end{multline*}
+\begin{multline*}
+  m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} \\ = (50.141g \pm 0.006\%)(4.19Jg^{-1}\degree C^{-1})(36.9\degree C \pm 2\%) \\ + (13.039g \pm 0.02\%)(0.897Jg^{-1}\degree C^{-1})(36.9\degree C \pm 2\%)
+\end{multline*}
+$m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} = 8.18 \times 10^3J \pm 4\%$
+
+\begin{align*}
+  n & = (106.907 \pm 0.003g - 106.209g \pm 0.003g)(\frac{1mol}{352.77g})
+  \\
+  n & = (0.698g \pm 0.9\%)(\frac{1mol}{352.77g})
+  \\
+  n & = 1.98 \times 10^{-3} mol \pm 0.9\%
+\end{align*}
+
+\begin{align*}
+  H\degree_{comb} & = \frac{8.18 \times 10^3J \pm 4\%}{1.98 \times 10^{-3} mol \pm 0.9\%}
+  \\
+  H\degree_{comb} & = -4.1MJmol^{-1} \pm 0.2 MJmol^{-1}
+\end{align*}
+
+Table \ref*{tab:experCalc} presents the calculated experimental molar enthalpies of combustion for each trial.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|l|}
+    \hline
+    Trial Number & \begin{tabular}[c]{@{}l@{}}Experimental molar enthalpy of combustion $/MJmol^{-1}$ \\ $\pm 0.2 MJmol^{-1}$ \end{tabular} \\
+    \hline
+    1            & -4.1                                                                                                                                         \\
+    \hline
+    2            & -4.2                                                                                                                                         \\
+    \hline
+    3            & -4.8
+    \\
+    \hline
+  \end{tabular}
+  \caption{Calculated experimental molar enthalpy of combustion for each trial}
+  \label{tab:experCalc}
 \end{table}
 
 \section{Conclusion}
