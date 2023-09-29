@@ -267,7 +267,8 @@ $m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} = 8.18 \times 10
 \begin{align*}
   H\degree_{comb} & = \frac{8.18 \times 10^3J \pm 4\%}{1.98 \times 10^{-3} mol \pm 0.9\%}
   \\
-  H\degree_{comb} & = -4.1MJmol^{-1} \pm 0.2 MJmol^{-1}
+  H\degree_{comb} & = -4.1MJmol^{-1} \pm 0.2 MJmol^{-1}                                   \\
+  H\degree_{comb} & = -4.1MJ \pm 0.2 MJ
 \end{align*}
 
 Table \ref*{tab:experCalc} presents the calculated experimental molar enthalpies of combustion for each trial.
@@ -276,11 +277,11 @@ Table \ref*{tab:experCalc} presents the calculated experimental molar enthalpies
   \centering
   \begin{tabular}{|l|l|}
     \hline
-    Trial Number & \begin{tabular}[c]{@{}l@{}}Experimental molar enthalpy of combustion $/MJmol^{-1}$ \\ $\pm 0.2 MJmol^{-1}$ \end{tabular} \\
+    Trial Number & \begin{tabular}[c]{@{}l@{}}Experimental molar enthalpy of combustion $/MJ$ \\ $(\pm 0.2 MJ)$ \end{tabular} \\
     \hline
-    1            & -4.1                                                                                                                                         \\
+    1            & -4.1                                                                                                       \\
     \hline
-    2            & -4.2                                                                                                                                         \\
+    2            & -4.2                                                                                                       \\
     \hline
     3            & -4.8
     \\
@@ -289,6 +290,31 @@ Table \ref*{tab:experCalc} presents the calculated experimental molar enthalpies
   \caption{Calculated experimental molar enthalpy of combustion for each trial}
   \label{tab:experCalc}
 \end{table}
+
+The average experimental molar enthalpy of combustion for Paraffin Wax can then be calculated, as shown below.
+\begin{align*}
+  \overline{\Delta H\degree_{comb}} & = \frac{\Sigma\Delta H\degree_{comb}}{N}
+  \\
+  \text{where }                     & \overline{\Delta H\degree_{comb}} = \text{ average experimental molar enthalpy /MJ}
+  \\
+                                    & \Delta H\degree_{comb} = \text{ calculated experimental molar enthalpy for a trial /MJ}
+  \\
+                                    & N = \text{ number of trials conducted}
+  \\
+  \overline{\Delta H\degree_{comb}} & = \frac{(-4.1MJ \pm 0.2 MJ) + (-4.2 \pm 0.2 MJ) + (-4.8 \pm 0.2 MJ)}{3}
+  \\
+                                    & = -4.4MJ \pm 0.2 MJ
+\end{align*}
+
+Finally, the percent error can be calculated using this averaged value as the experimental molar enthalpy of combustion.
+
+\begin{align*}
+  \%_{err} & = \left|\frac{experimental - theoretical}{theoretical} \times 100\%\right|
+  \\
+           & = \left|\frac{-4.4MJ - (-14.7MJ)}{-14.7MJ} \times 100\%\right|
+  \\
+           & = 70.3\%
+\end{align*}
 
 \section{Conclusion}
 
