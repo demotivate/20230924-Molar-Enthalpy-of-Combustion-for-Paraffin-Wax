@@ -200,26 +200,34 @@ calculated using Hess' Law.
 With \(\Delta H\degree_{f}\) being the molar enthalpy of formation for some compound,
 the following values will be used.
 \\
+\\
 \begin{tabular}{ll}
+  \centering
   \ce{C25H52(s)}: & \(\Delta H\degree_{f} = -1424.3~kJmol^{-1}\) \\
   \ce{CO2(g)}:    & \(\Delta H\degree_{f} = -393.5~kJmol^{-1}\)  \\
   \ce{H2O(g)}:    & \(\Delta H\degree_{f} = -241.8~kJmol^{-1}\)
 \end{tabular}
+\\
+\\
 
 These values can then be used to calculated to theoretical molar enthalpy of combustion for Paraffin Wax.
 
 \begin{align*}
-  let~\Delta H\degree_{comb} & = \mbox{the molar enthalpy of combustion for Paraffin Wax } /kJ      \\
-  let~n                      & = \mbox{the amount of a compound } /mol                              \\
-  let~\Delta H\degree_{f}    & = \mbox{the molar enthalpy of formation for a compound } /kJmol^{-1} \\
+  \text{let}~ & \Delta H\degree_{comb} = \mbox{calculated theoretical molar enthalpy of combustion}             \\
+              & \text{ for Paraffin Wax } /kJ                                                                   \\
+              & n                          = \mbox{the amount of a compound } /mol                              \\
+              & \Delta H\degree_{f}        = \mbox{the molar enthalpy of formation for a compound } /kJmol^{-1}
 \end{align*}
-
-\begin{multline*}
-  \Delta H\degree_{comb} = \Sigma nH\degree_{f}products - \Sigma nH\degree_{f}reactants \\
-  \Delta H\degree_{comb} = \left((25mol)(-393.5kJmol^{-1}) + (26mol)(-241.8kJmol^{-1})\right)\\ - (1mol)(-1424.3kJmol^{-1})
-\end{multline*}
-\[\Delta H\degree_{comb} = -14700kJ\]
-\[\Delta H\degree_{comb} = -14.7MJ\]
+\begin{align*}
+  \Delta H\degree_{comb} & = \sum nH\degree_{f}products - \sum nH\degree_{f}reactants
+  \\
+  \Delta H\degree_{comb} & = \left((25mol)(-393.5kJmol^{-1}) + (26mol)(-241.8kJmol^{-1})\right)
+  \\ & - (1mol)(-1424.3kJmol^{-1})
+  \\
+  \Delta H\degree_{comb} & = -14700kJ\
+  \\
+  \Delta H\degree_{comb} & = -14.7MJ\
+\end{align*}
 
 \subsection{Calculation of experimental molar enthalpy\\ of combustion}
 The system of the calorimetry experiment will be the combustion of the Paraffin Wax,
@@ -244,31 +252,50 @@ what they entail. Note that \(q\) equals to the total heat in J.
 
 Given that \(q_1=q_2+q_3\), the value of \(nH\degree_{comb}\) can then be calculated. A sample calculation is shown below for Trial 1.
 \begin{align*}
-  q_1              & = q_2 + q_3                                                                \\
-  nH\degree_{comb} & = m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}           \\
-  H\degree_{comb}  & = \frac{m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}}{n} \\
+   & q_1              = q_2 + q_3                                                      \\
+   & nH\degree_{comb} = m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}
 \end{align*}
-\begin{multline*}
-  m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} \\ = (50.141g \pm 0.003g)(4.19Jg^{-1}\degree C^{-1})(60.7\degree C \pm 0.3\degree C - 23.8\degree C \pm 0.3\degree C) \\+ (13.039g \pm 0.003g)(0.897Jg^{-1}\degree C^{-1})(60.7\degree C \pm 0.3\degree C - 23.8\degree C \pm 0.3\degree C)
-\end{multline*}
-\begin{multline*}
-  m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} \\ = (50.141g \pm 0.006\%)(4.19Jg^{-1}\degree C^{-1})(36.9\degree C \pm 2\%) \\ + (13.039g \pm 0.02\%)(0.897Jg^{-1}\degree C^{-1})(36.9\degree C \pm 2\%)
-\end{multline*}
-$m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} = 8.18 \times 10^3J \pm 4\%$
-
 \begin{align*}
-  n & = (106.907 \pm 0.003g - 106.209g \pm 0.003g)(\frac{1mol}{352.77g})
-  \\
-  n & = (0.698g \pm 0.9\%)(\frac{1mol}{352.77g})
-  \\
-  n & = 1.98 \times 10^{-3} mol \pm 0.9\%
+  \text{where } & H\degree_{comb} = \text{ calculated experimental molar enthalpy of combustion }
+  \\ & \text{of Paraffin Wax } /J
+  \\ & n = \text{ amount of Paraffin Wax combusted } /mol
+  \\ & m = \text{ mass of a component in the surroundings } /g
+  \\ & c = \text{ specific heat capacity of a component in the } \\ & \text{surroundings } /Jg^{-1}\degree C^{-1}
+  \\ & \Delta T = \text{ change in temperature of a component in the } \\ & \text{surroundings } /\degree C
+  \\ H\degree_{comb} & = \frac{m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}}{n}
 \end{align*}
-
+In order to be able to calculate $n$, the molar mass of Paraffin Wax (\ce{C25H52(s)}) must be calculated first.
 \begin{align*}
-  H\degree_{comb} & = \frac{8.18 \times 10^3J \pm 4\%}{1.98 \times 10^{-3} mol \pm 0.9\%}
+                & M_{\ce{C25H52(s)}} = \sum (M_{element} \times n_{element})  \\
+  \text{where } & M = \text{ molar mass of an element or compound } gmol^{-1}
+  \\ & n = \text{ amount of an element or compound } /mol
+  \\ & M_{\ce{C25H52(s)}} = (25 mol)(12.02 gmol^{-1}) + (52 mol)(1.01 gmol^{-1})                                       \\
+                & = 352.77 g
+\end{align*}
+\\
+\begin{align*}
+   & m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}
+  \\ & = (50.141g \pm 0.003g)(4.19Jg^{-1}\degree C^{-1})(60.7\degree C \pm 0.3\degree C - 23.8\degree C \pm 0.3\degree C)
+  \\ & + (13.039g \pm 0.003g)(0.897Jg^{-1}\degree C^{-1})(60.7\degree C \pm 0.3\degree C - 23.8\degree C \pm 0.3\degree C)
   \\
-  H\degree_{comb} & = -4.1MJmol^{-1} \pm 0.2 MJmol^{-1}                                   \\
-  H\degree_{comb} & = -4.1MJ \pm 0.2 MJ
+  \\
+   & m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al}
+  \\ & = (50.141g \pm 0.006\%)(4.19Jg^{-1}\degree C^{-1})(36.9\degree C \pm 2\%)
+  \\ & + (13.039g \pm 0.02\%)(0.897Jg^{-1}\degree C^{-1})(36.9\degree C \pm 2\%)
+  \\
+  \\
+   & m_{water}c_{water}\Delta T_{water} + m_{Al}c_{Al}\Delta T_{Al} = 8.18 \times 10^3J \pm 4\%
+  \\
+  \\ & n                = (106.907 \pm 0.003g - 106.209g \pm 0.003g)(\frac{1mol}{352.77g})
+  \\
+   & n                = (0.698g \pm 0.9\%)(\frac{1mol}{352.77g})
+  \\
+   & n                = 1.98 \times 10^{-3} mol \pm 0.9\%
+  \\
+   & H\degree_{comb}  = \frac{8.18 \times 10^3J \pm 4\%}{1.98 \times 10^{-3} mol \pm 0.9\%}
+  \\
+   & H\degree_{comb}  = -4.1MJmol^{-1} \pm 0.2 MJmol^{-1}                                       \\
+   & H\degree_{comb}  = -4.1MJ \pm 0.2 MJ
 \end{align*}
 
 Table \ref*{tab:experCalc} presents the calculated experimental molar enthalpies of combustion for each trial.
@@ -293,9 +320,9 @@ Table \ref*{tab:experCalc} presents the calculated experimental molar enthalpies
 
 The average experimental molar enthalpy of combustion for Paraffin Wax can then be calculated, as shown below.
 \begin{align*}
-  \overline{\Delta H\degree_{comb}} & = \frac{\Sigma\Delta H\degree_{comb}}{N}
+  \overline{\Delta H\degree_{comb}} & = \frac{\sum \Delta H\degree_{comb}}{N}
   \\
-  \text{where }                     & \overline{\Delta H\degree_{comb}} = \text{ average experimental molar enthalpy /MJ}
+  \text{where }                     & \overline{\Delta H\degree_{comb}} = \text{ calculated average experimental molar enthalpy /MJ}
   \\
                                     & \Delta H\degree_{comb} = \text{ calculated experimental molar enthalpy for a trial /MJ}
   \\
@@ -306,6 +333,10 @@ The average experimental molar enthalpy of combustion for Paraffin Wax can then 
                                     & = -4.4MJ \pm 0.2 MJ
 \end{align*}
 
+Note that the decision of what the uncertainty of the averaged value would be is based on all of
+the uncertainties of the individual values calculated from each trial, in which it would be reasonable
+for the final averaged value to follow the same pattern.
+\\
 Finally, the percent error can be calculated using this averaged value as the experimental molar enthalpy of combustion.
 
 \begin{align*}
@@ -319,6 +350,8 @@ Finally, the percent error can be calculated using this averaged value as the ex
 \section{Conclusion}
 
 \subsection{Summary}
+
+
 
 \subsection{Evaluation}
 
